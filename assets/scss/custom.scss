@@ -1,0 +1,56 @@
+// all other custom css
+/* styles.css */
+
+$darkPink: #9a447c;
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+#hero {
+    background: url("../images/showcase.jpg") top center / cover no-repeat;
+    min-height: 750px;
+    position: relative; 
+
+    #header{
+        z-index: 2;
+    }
+
+    #overlay{
+        background: rgba(0,0,0,0.1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    h1 {
+        font-family: 'Pacifico', cursive;
+        line-height: 1.5;
+    }
+}
+
+@media(max-width: 768px){
+    .navbar {
+        background: #1f1f1f;
+        .nav-link:hover {
+            border-bottom: none;
+        }
+
+        button {
+            outline: none;
+            border: none;
+        }
+    }
+
+    #hero {
+        min-height: 500px;
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}
+
+
