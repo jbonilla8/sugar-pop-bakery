@@ -10568,7 +10568,7 @@ body {
 
 #hero {
   background: url("../images/showcase.jpg") top center/cover no-repeat;
-  min-height: 750px;
+  min-height: calc(100vh - 40px);
   position: relative;
 }
 
